@@ -1,0 +1,15 @@
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Python Scripts (Maintenance)
+fix_merge.py
+merge_sections.py
+update_gallery.py
+update_projects.py
+check_images.py
+
+# Temp files
+*.log
+*.tmp

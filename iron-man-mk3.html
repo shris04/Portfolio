@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Iron Man MK3 Suitcase - Shristhi Pant</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Override Global Styles for CoreAxis Aesthetic */
+        body,
+        #page-wrapper {
+            background-color: #000000 !important;
+            /* Black Background */
+            color: #ffffff !important;
+        }
+
+        /* Typography Overrides for Project Content Only */
+        .project-container h1,
+        .project-container h2,
+        .project-container h3,
+        .project-container h4,
+        .project-container h5,
+        .project-container h6 {
+            color: #ffffff !important;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .project-container p,
+        .project-container li {
+            color: #ffffff !important;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        /* Header / Nav Adjustments */
+        #header {
+            background-color: #737373;
+            box-shadow: none;
+        }
+
+        #menu {
+            background-color: #737373 !important;
+        }
+
+        #header h1 a {
+            color: #ffffff !important;
+        }
+
+        .menuToggle span {
+            color: #ffffff !important;
+        }
+
+        #nav>ul>li>a.menuToggle:after {
+            filter: invert(0);
+            /* Make hamburger icon white */
+        }
+
+        /* Layout Container */
+        .project-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 6em 2em;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4em;
+        }
+
+        .hero-title {
+            font-size: 3em;
+            font-weight: 800;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #737373;
+            /* Gray Accent */
+            padding-bottom: 0.2em;
+        }
+
+        .hero-content {
+            display: flex;
+            gap: 2em;
+            align-items: center;
+        }
+
+        .hero-image {
+            width: 60%;
+            border-radius: 4px;
+            box-shadow: 10px 10px 0px #737373;
+            /* Gray Shadow Block */
+        }
+
+        /* Info Bar (Black Boxes like Image 2) */
+        .info-bar {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1em;
+            margin-top: 2em;
+        }
+
+        .info-box {
+            background-color: #737373;
+            color: #ffffff !important;
+            padding: 1em;
+            font-size: 0.8em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .info-box span.label {
+            color: #000000;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.7em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Grid Sections */
+        .grid-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4em;
+            margin-bottom: 4em;
+            padding: 2em;
+            border: 2px solid #ffffff;
+        }
+
+        .section-header {
+            grid-column: 1 / -1;
+            font-size: 1.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        .section-header::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #737373;
+            border-radius: 50%;
+        }
+
+        /* Evidence & Prototype Styles */
+        .full-width-section {
+            margin-bottom: 4em;
+        }
+
+        .full-width-section h3 {
+            border-bottom: 2px solid #737373;
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        .evidence-grid,
+        .prototype-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+        }
+
+        .evidence-item,
+        .prototype-item {
+            background: #1a1a1a;
+            padding: 1em;
+            border: 1px solid #ffffff;
+        }
+
+        .prototype-item img,
+        .prototype-item video {
+            width: 100%;
+            aspect-ratio: 1.25;
+            object-fit: cover;
+            border: 1px solid #333;
+        }
+
+        .evidence-item img,
+        .evidence-item video {
+            width: 100%;
+            aspect-ratio: 1.25;
+            /* Matches 900x720 video ratio (5:4) */
+            object-fit: cover;
+            border: 1px solid #333;
+        }
+
+        .evidence-item p,
+        .prototype-item p {
+            margin-top: 1.5em;
+            /* Bring caption down slightly */
+        }
+
+        /* Footer Button */
+        .pdf-button {
+            display: block;
+            width: fit-content;
+            margin: 4em auto 0;
+            /* Centered and pushed down */
+            text-align: center;
+            border: 2px solid #737373;
+            color: #737373 !important;
+            padding: 0.8em 2em;
+            /* Smaller padding */
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s;
+            margin-top: 2em;
+            opacity: 0.7;
+        }
+
+        .pdf-button:hover {
+            background-color: #737373;
+            color: #ffffff !important;
+            opacity: 1;
+        }
+
+        /* Mobile Responsive */
+        @media screen and (max-width: 980px) {
+            .hero-content {
+                flex-direction: column;
+            }
+
+            .hero-image {
+                width: 100%;
+            }
+
+            .info-bar {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-section {
+                grid-template-columns: 1fr;
+                gap: 2em;
+            }
+
+            .evidence-grid,
+            .prototype-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">Shristhi Pant</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html#two">About Me</a></li>
+                                <li><a href="index.html#one">Skills</a></li>
+                                <li><a href="index.html#three">Projects</a></li>
+                                <li><a href="#cta">Contact Me</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <article id="main">
+            <div class="project-container">
+
+                <!-- Hero Section -->
+                <div class="hero-section">
+                    <h1 class="hero-title">Iron Man MK3 Suitcase</h1>
+                    <div class="hero-content">
+                        <div style="flex: 1;">
+                            <p>Replicating the Iron Man MK3 suit that is able to transform into a suitcase
+                                mechanism, focusing on scale design, compression, and mechanical deployment.</p>
+                        </div>
+                        <img src="images/MK3_ISO.jpg" alt="Iron Man MK3" class="hero-image" />
+                    </div>
+
+                    <!-- Info Bar (From Image 2 Layout) -->
+                    <div class="info-bar">
+                        <div class="info-box">
+                            <span class="label">Goal</span>
+                            <span>Design the Iron Man MK3 to scale and its suitcase.</span>
+                        </div>
+                        <div class="info-box">
+                            <span class="label">Software</span>
+                            <span>SolidWorks, SolidWorks Visualize, Excel Tolerance Stack-Up Analysis.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problem / Requirements (Image 2 Section 1) -->
+                <div class="grid-section">
+                    <div>
+                        <div class="section-header">The Problem</div>
+                        <p>The primary challenge was fitting the suit into a portable suitcase design
+                            without compromising the functionality and aesthetic accuracy of the suit.
+                            The solution resulted in a modualized design where limbs are detached from the body. </p>
+                    </div>
+                    <div>
+                        <div class="section-header">Key Requirements</div>
+                        <ul>
+                            <li>To scale of MK3 suit.</li>
+                            <li>Iron Patriot configuration.</li>
+                            <li>Suitcase transformation.</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- The Prototype (Image 2 Section 3) -->
+                <div class="full-width-section">
+                    <h3>The Prototype</h3>
+                    <div class="prototype-grid">
+<div class="prototype-item">
+                            <img src="images/MK3_concept.jpg" alt="Exploded View" />
+                            <p>Iron Man MK3 Suit close up from movie.</p>
+                        </div>
+                        <div class="prototype-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="videos/irron_iso.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Final MK3 suit design.</p>
+                        </div>
+<div class="prototype-item">
+                            <img src="images/Patriot_Isometric.png" alt="Patriot Isometric" />
+                            <p>Patriot Design Isometric View</p>
+                        </div>
+                        <div class="prototype-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="videos/MK3_ANIMATION.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Final suitcase configuration animation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="documents/Final MK3 Design Package.pdf" class="pdf-button" target="_blank">PDF of Design
+                    Package</a>
+
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer id="footer" style="background-color: transparent; color: #ffffff;">
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/shristhi-pant" class="icon brands fa-linkedin-in" style="color: #ffffff;"><span class="label">LinkedIn</span></a></li>
+            </ul>
+            <ul class="copyright" style="color: #cccccc;">
+                <li>SHRISTHI PANT | 2026</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Retractable Prosthetic Arm - Shristhi Pant</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Override Global Styles for CoreAxis Aesthetic */
+        body,
+        #page-wrapper {
+            background-color: #000000 !important;
+            /* Black Background */
+            color: #ffffff !important;
+        }
+
+        /* Typography Overrides for Project Content Only */
+        .project-container h1,
+        .project-container h2,
+        .project-container h3,
+        .project-container h4,
+        .project-container h5,
+        .project-container h6 {
+            color: #ffffff !important;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .project-container p,
+        .project-container li {
+            color: #ffffff !important;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        /* Header / Nav Adjustments */
+        #header {
+            background-color: #737373;
+            box-shadow: none;
+        }
+
+        #menu {
+            background-color: #737373 !important;
+        }
+
+        #header h1 a {
+            color: #ffffff !important;
+        }
+
+        .menuToggle span {
+            color: #ffffff !important;
+        }
+
+        #nav>ul>li>a.menuToggle:after {
+            filter: invert(0);
+            /* Make hamburger icon white */
+        }
+
+        /* Layout Container */
+        .project-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 6em 2em;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 4em;
+        }
+
+        .hero-title {
+            font-size: 3em;
+            font-weight: 800;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #737373;
+            /* Gray Accent */
+            padding-bottom: 0.2em;
+        }
+
+        .hero-content {
+            display: flex;
+            gap: 2em;
+            align-items: center;
+        }
+
+        .hero-image {
+            width: 60%;
+            border-radius: 4px;
+            box-shadow: 10px 10px 0px #737373;
+            /* Gray Shadow Block */
+        }
+
+        /* Info Bar (Black Boxes like Image 2) */
+        .info-bar {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1em;
+            margin-top: 2em;
+        }
+
+        .info-box {
+            background-color: #737373;
+            color: #ffffff !important;
+            padding: 1em;
+            font-size: 0.8em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .info-box span.label {
+            color: #000000;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.7em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Grid Sections */
+        .grid-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4em;
+            margin-bottom: 4em;
+            padding: 2em;
+            border: 2px solid #ffffff;
+        }
+
+        .section-header {
+            grid-column: 1 / -1;
+            font-size: 1.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        .section-header::before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #737373;
+            border-radius: 50%;
+        }
+
+        /* Evidence & Prototype Styles */
+        .full-width-section {
+            margin-bottom: 4em;
+        }
+
+        .full-width-section h3 {
+            border-bottom: 2px solid #737373;
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        .evidence-grid,
+        .prototype-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+        }
+
+        .evidence-item,
+        .prototype-item {
+            background: #1a1a1a;
+            padding: 1em;
+            border: 1px solid #ffffff;
+        }
+
+        .evidence-item img,
+        .evidence-item video,
+        .prototype-item img,
+        .prototype-item video {
+            width: 100%;
+            aspect-ratio: 1.25;
+            object-fit: cover;
+            border: 1px solid #333;
+        }
+
+        .evidence-item p,
+        .prototype-item p {
+            margin-top: 1.5em;
+            /* Bring caption down slightly */
+        }
+
+        /* Footer Button */
+        .pdf-button {
+            display: block;
+            width: fit-content;
+            margin: 4em auto 0;
+            /* Centered and pushed down */
+            text-align: center;
+            border: 2px solid #737373;
+            color: #737373 !important;
+            padding: 0.8em 2em;
+            /* Smaller padding */
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s;
+            opacity: 0.7;
+        }
+
+        .pdf-button:hover {
+            background-color: #737373;
+            color: #ffffff !important;
+            opacity: 1;
+        }
+
+        /* Mobile Responsive */
+        @media screen and (max-width: 980px) {
+            .hero-content {
+                flex-direction: column;
+            }
+
+            .hero-image {
+                width: 100%;
+            }
+
+            .info-bar {
+                grid-template-columns: 1fr;
+            }
+
+            .grid-section {
+                grid-template-columns: 1fr;
+                gap: 2em;
+            }
+
+            .evidence-grid,
+            .prototype-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">Shristhi Pant</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html#two">About Me</a></li>
+                                <li><a href="index.html#one">Skills</a></li>
+                                <li><a href="index.html#three">Projects</a></li>
+                                <li><a href="#cta">Contact Me</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <article id="main">
+            <div class="project-container">
+
+                <!-- Hero Section -->
+                <div class="hero-section">
+                    <h1 class="hero-title">Retractable Prosthetic Arm</h1>
+                    <div class="hero-content">
+                        <div style="flex: 1;">
+                            <p>The freshman year prototyping project of the Dragon Wing. It is a low-cost, bio-inspired
+                                prosthetic arm prototypedesigned to empower
+                                seniors and individuals with limited mobility. By combining accessible materials with
+                                biometric control, the device provides a telescoping reach and a muscle-activated grasp
+                                to restore independence in daily tasks.</p>
+                        </div>
+                        <img src="images/arm.png" alt="Prosthetic Arm" class="hero-image" />
+                    </div>
+
+                    <!-- Info Bar (From Image 2 Layout) -->
+                    <div class="info-bar">
+                        <div class="info-box">
+                            <span class="label">Goal</span>
+                            <span>Develop an affordable, assistive prosthetic that provides elderly and disabled
+                                users with an extended telescoping reach and a biometric-controlled grasping
+                                mechanism.</span>
+                        </div>
+                        <div class="info-box">
+                            <span class="label">Software/Hardware</span>
+                            <span>Fusion 360, Arduino IDE, Ultimaker Cura, SolidWorks, Breadboard/Wiring, MyoWare
+                                Sensor, Servo Motor </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problem / Requirements (Image 2 Section 1) -->
+                <div class="grid-section">
+                    <div>
+                        <div class="section-header">The Problem</div>
+                        <p>Approximately 12 million seniors over the age of 65 require assistive equipment for daily
+                            tasks, yet nearly 5 million lack access due to high costs. Older populations also suffer
+                            from joint pain (70% report arthritis) that limits their range of motion and physical
+                            security. There is a critical need for an affordable, functional, and user-friendly
+                            prosthetic to assist with reaching and grasping.</p>
+                    </div>
+                    <div>
+                        <div class="section-header">Key Requirements</div>
+                        <ul>
+                            <li>Telescoping extension mechanism</li>
+                            <li>Integrate a MyoWare muscle sensor to trigger the hand mechanism via muscle contractions
+                                for hands-free operation.</li>
+
+                            <li>Develop C++ Arduino code to manage three distinct functions: extension, retraction, and
+                                the grasping/releasing of the mechanical hand.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- The Prototype (Image 2 Section 3) -->
+                <div class="full-width-section">
+                    <h3>The Prototype</h3>
+                    <div class="prototype-grid">
+                        <div class="prototype-item">
+                            <video autoplay loop muted playsinline>
+                                <source src="videos/arm.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Demonstration of the prosthetic arm in action, showing extension and grasping
+                                capabilities.</p>
+                        </div>
+                        <div class="prototype-item">
+                            <img src="images/arm_iso.png" alt="Arm Isometric View" />
+                            <p>Isometric view of the final CAD assembly designed in Fusion 360.</p>
+                        </div>
+                        <div class="prototype-item">
+                            <img src="images/arm_code.png" alt="Arm Code" />
+                            <p>Code flowchart showing the logic behind the C++ Arduino code controlling the servo motors
+                                and muscle sensor inputs.
+                            </p>
+                        </div>
+                        <div class="prototype-item">
+                            <img src="images/arm_circuit.png" alt="Arm Circuit" />
+                            <p>Circuit diagram showing connections between the MyoWare sensor, Arduino, and motors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="documents/Final_Design_Investigation.pdf" class="pdf-button" target="_blank">PDF of Design
+                    Investigation</a>
+
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer id="footer" style="background-color: transparent; color: #ffffff;">
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/shristhi-pant" class="icon brands fa-linkedin-in" style="color: #ffffff;"><span class="label">LinkedIn</span></a></li>
+            </ul>
+            <ul class="copyright" style="color: #cccccc;">
+                <li>SHRISTHI PANT | 2026</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

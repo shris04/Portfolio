@@ -1,0 +1,619 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+        <title>Photography - Shristhi Pant</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript>
+                <link rel="stylesheet" href="assets/css/noscript.css" />
+        </noscript>
+        <style>
+                /* Override Global Styles for CoreAxis Aesthetic */
+                body,
+                #page-wrapper {
+                        background-color: #000000 !important;
+                        /* Black Background */
+                        color: #ffffff !important;
+                }
+
+                /* Typography Overrides for Project Content Only */
+                .project-container h1,
+                .project-container h2,
+                .project-container h3,
+                .project-container h4,
+                .project-container h5,
+                .project-container h6 {
+                        color: #ffffff !important;
+                        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                        text-transform: uppercase;
+                        letter-spacing: 0.05em;
+                }
+
+                .project-container p,
+                .project-container li {
+                        color: #ffffff !important;
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 0.9em;
+                        line-height: 1.6;
+                }
+
+                /* Header / Nav Adjustments */
+                #header {
+                        background-color: #737373;
+                        box-shadow: none;
+                }
+
+                #menu {
+                        background-color: #737373 !important;
+                }
+
+                #header h1 a {
+                        color: #ffffff !important;
+                }
+
+                .menuToggle span {
+                        color: #ffffff !important;
+                }
+
+                #nav>ul>li>a.menuToggle:after {
+                        filter: invert(0);
+                        /* Make hamburger icon white */
+                }
+
+                /* Layout Container */
+                .project-container {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 6em 2em;
+                }
+
+                /* Hero Section */
+                .hero-section {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 4em;
+                }
+
+                .hero-title {
+                        font-size: 3em;
+                        font-weight: 800;
+                        margin-bottom: 0.5em;
+                        border-bottom: 2px solid #737373;
+                        /* Gray Accent */
+                        padding-bottom: 0.2em;
+                }
+
+                .hero-content {
+                        display: flex;
+                        gap: 2em;
+                        align-items: center;
+                }
+
+                .hero-image {
+                        width: 60%;
+                        border-radius: 4px;
+                        box-shadow: 10px 10px 0px #737373;
+                        /* Gray Shadow Block */
+                }
+
+                /* Info Bar (Black Boxes like Image 2) */
+                .info-bar {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 1em;
+                        margin-top: 2em;
+                }
+
+                .info-box {
+                        background-color: #737373;
+                        color: #ffffff !important;
+                        padding: 1em;
+                        font-size: 0.8em;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                }
+
+                .info-box span.label {
+                        color: #000000;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        font-size: 0.7em;
+                        margin-bottom: 0.5em;
+                }
+
+                /* Grid Sections */
+                .grid-section {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 4em;
+                        margin-bottom: 4em;
+                        padding: 2em;
+                        border: 2px solid #ffffff;
+                }
+
+                .section-header {
+                        grid-column: 1 / -1;
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5em;
+                        margin-bottom: 1em;
+                }
+
+                .section-header::before {
+                        content: '';
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        background-color: #737373;
+                        border-radius: 50%;
+                }
+
+                /* Evidence & Prototype Styles */
+                .full-width-section {
+                        margin-bottom: 4em;
+                }
+
+                .full-width-section h3 {
+                        border-bottom: 2px solid #737373;
+                        display: inline-block;
+                        margin-bottom: 1em;
+                }
+
+                .evidence-grid,
+                .prototype-grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        gap: 2em;
+                }
+
+                .evidence-item,
+                .prototype-item {
+                        background: #1a1a1a;
+                        padding: 1em;
+                        border: 1px solid #ffffff;
+                }
+
+                .evidence-item img,
+                .evidence-item video,
+                .prototype-item img,
+                .prototype-item video {
+                        width: 100%;
+                        aspect-ratio: 1.25;
+                        object-fit: cover;
+                        border: 1px solid #333;
+                }
+
+                .evidence-item p,
+                .prototype-item p {
+                        margin-top: 1.5em;
+                        /* Bring caption down slightly */
+                }
+
+                /* Footer Button */
+                .pdf-button {
+                        display: block;
+                        width: fit-content;
+                        margin: 4em auto 0;
+                        /* Centered and pushed down */
+                        text-align: center;
+                        border: 2px solid #737373;
+                        color: #737373 !important;
+                        padding: 0.8em 2em;
+                        /* Smaller padding */
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        transition: all 0.3s;
+                        opacity: 0.7;
+                }
+
+                .pdf-button:hover {
+                        background-color: #737373;
+                        color: #ffffff !important;
+                        opacity: 1;
+                }
+
+                /* Mobile Responsive */
+                @media screen and (max-width: 980px) {
+                        .hero-content {
+                                flex-direction: column;
+                        }
+
+                        .hero-image {
+                                width: 100%;
+                        }
+
+                        .info-bar {
+                                grid-template-columns: 1fr;
+                        }
+
+                        .grid-section {
+                                grid-template-columns: 1fr;
+                                gap: 2em;
+                        }
+
+                        .evidence-grid,
+                        .prototype-grid {
+                                grid-template-columns: 1fr;
+                        }
+
+                        .gallery-grid {
+                                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+                        }
+                }
+
+                /* Gallery Styles */
+                .gallery-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                        gap: 1.5em;
+                }
+
+                .gallery-item {
+                        border: none;
+                        padding: 0;
+                        background: none;
+                }
+
+                .gallery-item img {
+                        width: 100%;
+                        height: auto;
+                        aspect-ratio: 3/2;
+                        object-fit: cover;
+                        border-radius: 4px;
+                        display: block;
+                        transition: transform 0.3s ease;
+                }
+
+                .gallery-item img:hover {
+                        transform: scale(1.02);
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+                }
+
+                /* Accordion Styles */
+                .accordion-header {
+                        cursor: pointer;
+                        position: relative;
+                        padding-right: 2em;
+                        display: block;
+                        width: 100%;
+                        border-bottom: 2px solid #737373;
+                        margin-bottom: 1em;
+                        user-select: none;
+                }
+
+                .accordion-header::after {
+                        content: '\f078';
+                        /* fa-chevron-down */
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: 900;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition: transform 0.3s ease;
+                        color: #737373;
+                }
+
+                .accordion-header.active::after {
+                        transform: translateY(-50%) rotate(180deg);
+                }
+
+                .gallery-grid {
+                        display: none;
+                        /* Hidden by default */
+                }
+        </style>
+</head>
+
+<body class="is-preload">
+
+        <div id="page-wrapper">
+
+                <!-- Header -->
+                <header id="header">
+                        <h1><a href="index.html">Shristhi Pant</a></h1>
+                        <nav id="nav">
+                                <ul>
+                                        <li class="special">
+                                                <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                                                <div id="menu">
+                                                        <ul>
+                                                                <li><a href="index.html">Home</a></li>
+                                                                <li><a href="index.html#two">About Me</a></li>
+                                                                <li><a href="index.html#one">Skills</a></li>
+                                                                <li><a href="index.html#three">Projects</a></li>
+                                                                <li><a href="#cta">Contact Me</a></li>
+                                                        </ul>
+                                                </div>
+                                        </li>
+                                </ul>
+                        </nav>
+                </header>
+
+                <!-- Main Content -->
+                <article id="main">
+                        <div class="project-container">
+
+                                <!-- Hero Section -->
+                                <div class="hero-section">
+                                        <h1 class="hero-title">Photography</h1>
+                                        <div class="hero-content">
+                                                <div style="flex: 1;">
+                                                        <p>Pictures I've taken as I explore the world through </p>
+                                                </div>
+                                                <img src="images/camera.png" alt="Photography" class="hero-image" />
+                                        </div>
+
+                                        <!-- Info Bar (From Image 2 Layout) -->
+                                        <div class="info-bar">
+                                                <div class="info-box">
+                                                        <span class="label">Goal</span>
+                                                        <span>Capture the world.</span>
+                                                </div>
+                                                <div class="info-box">
+                                                        <span class="label">Hardware</span>
+                                                        <span>Fujifilm X-S2, Fujifilm FinePix 6800Z</span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <!-- Problem / Requirements (Image 2 Section 1) -->
+                                <div class="grid-section">
+                                        <div>
+                                                <div class="section-header">The Problem</div>
+                                                <p>Everyday moments, people, and environments often go unnoticed. I
+                                                        wanted a way
+                                                        to intentionally observe and capture these details to better
+                                                        understand the human experience
+                                                        and the world around me.</p>
+                                        </div>
+                                        <div>
+                                                <div class="section-header">Key Requirements</div>
+                                                <ul>
+                                                        <li>Have fun.</li>
+                                                        <li>Notice the beauty of small things.</li>
+                                                        <li>Experience the world.</li>
+                                                        <li>Experiment creativity.</li>
+
+                                                </ul>
+                                        </div>
+                                </div>
+
+                                <!-- The Evidence (Image 2 Section 2) -->
+                                <!-- People Gallery -->
+                                <!-- People Gallery -->
+                                <div class="full-width-section">
+                                        <h3 class="accordion-header">People</h3>
+                                        <div class="gallery-grid">
+                                                <div class="gallery-item"><img src="photography/people/DSCF0112.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF0451.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF0477.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF0482.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF0518.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF0544.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF0619.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF0646.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF2596.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF2676.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF2964.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF3188.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF3586.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF3621.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF3711.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF3750.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF3832.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF3915.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4045.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4049.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4051.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4152.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+
+                                                <div class="gallery-item"><img src="photography/people/DSCF4205.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4267.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4332.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4357.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4379.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4482.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4506.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4522.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4675.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/people/DSCF4978.JPG"
+                                                                alt="People Photo" loading="lazy" /></div>
+                                        </div>
+                                </div>
+
+                                <!-- Places Gallery -->
+                                <!-- Places Gallery -->
+                                <div class="full-width-section">
+                                        <h3 class="accordion-header">Places</h3>
+                                        <div class="gallery-grid">
+                                                <div class="gallery-item"><img src="photography/places/DSCF0490.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF1287.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF1332.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF1737.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF1889.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF1894.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF2073.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF2412.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF2549.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF2556.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF2607.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF2745.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF2773.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF3278.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF3319.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF3438.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF3456.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF4141.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF4186.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF4189.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF4199.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/places/DSCF4274.JPG"
+                                                                alt="Places Photo" loading="lazy" /></div>
+                                        </div>
+                                </div>
+
+                                <!-- Things Gallery -->
+                                <div class="full-width-section">
+                                        <h3 class="accordion-header">Things</h3>
+                                        <div class="gallery-grid">
+                                                <div class="gallery-item"><img src="photography/things/DSCF1660.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF2044.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF2302.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF2391.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF2446.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF2456.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+
+                                                <div class="gallery-item"><img src="photography/things/DSCF2478.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF2491.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF2585.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF2756.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF3084.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF3366.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF3684.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF3887.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF3907.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF4005.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF4046.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF4117.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+
+                                                <div class="gallery-item"><img src="photography/things/DSCF4275.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF4424.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF4435.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                                <div class="gallery-item"><img src="photography/things/DSCF4458.JPG"
+                                                                alt="Things Photo" loading="lazy" /></div>
+                                        </div>
+                                </div>
+
+
+
+                        </div>
+                </article>
+
+                <!-- Footer -->
+                <footer id="footer" style="background-color: transparent; color: #ffffff;">
+                        <ul class="icons">
+                                <li><a href="https://www.linkedin.com/in/shristhi-pant"
+                                                class="icon brands fa-linkedin-in" style="color: #ffffff;"><span
+                                                        class="label">LinkedIn</span></a></li>
+                        </ul>
+                        <ul class="copyright" style="color: #cccccc;">
+                                <li>SHRISTHI PANT | 2026</li>
+                        </ul>
+                </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+                document.querySelectorAll('.accordion-header').forEach(header => {
+                        header.addEventListener('click', () => {
+                                // Toggle active class on header
+                                header.classList.toggle('active');
+
+                                // Toggle visibility of the next sibling (the gallery grid)
+                                const gallery = header.nextElementSibling;
+                                if (gallery.style.display === "grid") {
+                                        gallery.style.display = "none";
+                                } else {
+                                        gallery.style.display = "grid";
+                                }
+                        });
+                });
+        </script>
+
+</body>
+
+</html>
